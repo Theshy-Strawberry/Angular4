@@ -1,0 +1,14 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+
+  <div>user:<input ngModel #userming="ngModel" name="username" type="text"></div>
+  <div>phone:<input ngModel name="phnumber" type="text"></div>
+  <div ngModelGroup="pwdGroup" #pwds>
+    <div>pwd:<input ngModel name="pwd" type="password"></div>
+    <div>pwdResure:<input ngModel name="pwdResure" type="password"></div>
+  </div>
+  <button type="submit">注册</button>
+</form>
+<div>
+  <!--{{myForm.value | json}}-->
+  <!--{{userming.value}}-->
+</div>

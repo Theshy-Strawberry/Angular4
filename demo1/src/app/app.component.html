@@ -1,0 +1,13 @@
+<!--&lt;!&ndash;The content below is only a placeholder and can be replaced.&ndash;&gt;-->
+<!--<div style="text-align:center">-->
+  <!--parents-->
+<!--</div>-->
+<!--<div>-->
+  <!--<input type="text" placeholder="股票代码" [(ngModel)]="stock">-->
+  <!--<app-order [stockCode]="stock" [amount]="111"></app-order>-->
+<!--</div>-->
+<div>
+  <app-price-quote (buy)="PriceOuthandler($event)"></app-price-quote>
+  <app-order [priceQuote]="quote"></app-order>
+</div>
+
